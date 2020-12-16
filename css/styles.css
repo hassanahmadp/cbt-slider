@@ -1,1 +1,31 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+body > img {
+  position: absolute;
+}
+
+.pattern-quotes {
+  top: 21.4rem;
+  left: 26rem;
+}
+
+.pattern-bg {
+  top: 5rem;
+  right: 7.3rem;
+}
+
+.pattern-curve {
+  bottom: 0;
+  left: 0;
+}
+/*# sourceMappingURL=styles.css.map */
