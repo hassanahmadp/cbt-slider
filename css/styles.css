@@ -12,6 +12,7 @@ html {
 
 body > img {
   position: absolute;
+  z-index: -1;
 }
 
 .pattern-quotes {
@@ -27,5 +28,87 @@ body > img {
 .pattern-curve {
   bottom: 0;
   left: 0;
+}
+
+p {
+  font-size: 3.2rem;
+}
+
+main {
+  -webkit-transform: translateX(-25%);
+          transform: translateX(-25%);
+  width: 400vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider {
+  width: 11.2rem;
+  height: 5.6rem;
+  position: absolute;
+  top: 62.5rem;
+  right: 53.1rem;
+  background-color: white;
+  z-index: 10;
+  border-radius: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2.2rem;
+}
+
+.div-1,
+.div-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+img.image {
+  position: absolute;
+  top: 11.3rem;
+  right: 16.5rem;
+  -webkit-box-shadow: 1rem 2rem 6rem rgba(0, 0, 0, 0.3);
+          box-shadow: 1rem 2rem 6rem rgba(0, 0, 0, 0.3);
+}
+
+.text {
+  color: #202046;
+  width: 44.5%;
+  position: absolute;
+  top: 28.5rem;
+  left: 16.5rem;
+  z-index: 100;
+}
+
+.text p.para {
+  margin-bottom: 4rem;
+  width: 100%;
+}
+
+.nameDesig {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.nameDesig span {
+  font-weight: 500;
+  color: #babacf;
 }
 /*# sourceMappingURL=styles.css.map */

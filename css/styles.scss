@@ -4,19 +4,19 @@ $colors: (
 );
 
 @function color($color) {
-    @return map-get($colors, $color);
+  @return map-get($colors, $color);
 }
 
-@mixin flex($just,$align) {
-    display: flex;
-    justify-content: $just;
-    align-items: $align;
+@mixin flex($just, $align) {
+  display: flex;
+  justify-content: $just;
+  align-items: $align;
 }
 
 @mixin idealFlex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 * {
@@ -34,22 +34,80 @@ html {
 
 body > img {
   position: absolute;
+  z-index: -1;
 }
 
 .pattern-quotes {
-    top: 21.4rem;
-    left: 26rem;
+  top: 21.4rem;
+  left: 26rem;
 }
 
 .pattern-bg {
-    top: 5rem;
-    right: 7.3rem;
+  top: 5rem;
+  right: 7.3rem;
 }
 
 .pattern-curve {
-    bottom: 0;
-    left: 0;
+  bottom: 0;
+  left: 0;
 }
-body>div {
-  
+
+p {
+  font-size: 3.2rem;
+}
+main {
+  transform: translateX(-25%);
+  width: 400vw;
+  display: flex;
+}
+
+.slider {
+  width: 11.2rem;
+  height: 5.6rem;
+  position: absolute;
+  top: 62.5rem;
+  right: 53.1rem;
+  background-color: white;
+  z-index: 10;
+  border-radius: 3rem;
+  @include flex(space-between, center)
+  padding: 0 2.2rem;
+}
+
+.div-1,
+.div-2 {
+  @include flex(center,center);
+  width: 100vw;
+  height: 100vh;
+  position: relative; 
+}
+
+img.image {
+  position: absolute;
+  top: 11.3rem;
+  right: 16.5rem;
+  box-shadow: 1rem 2rem 6rem rgba(0, 0, 0, 0.3);
+}
+
+.text {
+  color: color(dark-blue);
+  width: 44.5%;
+  position: absolute;
+  top: 28.5rem;
+  left: 16.5rem;
+  z-index: 100;
+  p.para {
+    margin-bottom: 4rem;
+    width: 100%;
+    // font-weight: 500;
+  }
+}
+
+.nameDesig {
+  font-size: 2rem;
+  font-weight: 700;
+  span {
+    font-weight: 500;
+    color: color(grayish-blue);
+  }
 }
