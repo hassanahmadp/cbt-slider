@@ -7,6 +7,13 @@ const prevBtn = document.querySelector("#prevBTN");
 // eventlisteners
 nextBtn.addEventListener("click", nextSide);
 prevBtn.addEventListener("click", prevSide);
+document.addEventListener("keydown", function (e) {
+    if (e.key === "ArrowRight") {
+        nextSide();
+    } else if (e.key === "ArrowLeft") {
+        prevSide();
+    }
+});
 main.addEventListener("transitionend",function () {
     if (slideDivs[counter].classList.contains("firstClone")) {
         main.style.transition = `none`;
