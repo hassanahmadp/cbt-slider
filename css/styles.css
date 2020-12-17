@@ -10,6 +10,10 @@ html {
   font-size: 10px;
 }
 
+body {
+  overflow: hidden;
+}
+
 body > img {
   position: absolute;
   z-index: -1;
@@ -35,8 +39,6 @@ p {
 }
 
 main {
-  -webkit-transform: translateX(-25%);
-          transform: translateX(-25%);
   width: 400vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,6 +46,7 @@ main {
 }
 
 .slider {
+  overflow: hidden;
   width: 11.2rem;
   height: 5.6rem;
   position: absolute;
@@ -55,13 +58,27 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+.slider .btn {
+  height: 100%;
+  width: 5.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 2.2rem;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.slider .btn:hover {
+  background-color: #e9e6f9;
 }
 
 .div-1,
