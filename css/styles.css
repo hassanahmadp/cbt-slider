@@ -180,7 +180,6 @@ img.image {
     left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(0.7);
             transform: translate(-50%, -50%) scale(0.7);
-    padding: 0 2.2rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
