@@ -32,6 +32,10 @@ html {
   font-size: 10px;
 }
 
+// body {
+//   overflow: hidden;
+// }
+
 body > img {
   position: absolute;
   z-index: -1;
@@ -70,16 +74,16 @@ main {
   background-color: white;
   z-index: 10;
   border-radius: 3rem;
-  @include flex(space-between, center)
+  @include flex(space-between, center);
   padding: 0 2.2rem;
 }
 
 .div-1,
 .div-2 {
-  @include flex(center,center);
+  @include flex(center, center);
   width: 100vw;
   height: 100vh;
-  position: relative; 
+  position: relative;
 }
 
 img.image {
@@ -109,5 +113,26 @@ img.image {
   span {
     font-weight: 500;
     color: color(grayish-blue);
+  }
+}
+
+@media (max-width: 1235px) {
+  .pattern-bg {
+    top: 2.4rem;
+    width: 86.6667%;
+    left: (100% - 86.6667%)/2;
+  }
+
+  img.image {
+    top: 5.4rem;
+    left: (100% - 67.7333%)/2;
+    width: 67.7333%;
+  }
+
+  .slider {
+    top: 38.5%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(.7);
+    padding: 0 2.2rem;
   }
 }

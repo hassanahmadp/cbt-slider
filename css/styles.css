@@ -111,4 +111,24 @@ img.image {
   font-weight: 500;
   color: #babacf;
 }
+
+@media (max-width: 1235px) {
+  .pattern-bg {
+    top: 2.4rem;
+    width: 86.6667%;
+    left: 6.66665%;
+  }
+  img.image {
+    top: 5.4rem;
+    left: 16.13335%;
+    width: 67.7333%;
+  }
+  .slider {
+    top: 38.5%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(0.7);
+            transform: translate(-50%, -50%) scale(0.7);
+    padding: 0 2.2rem;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
