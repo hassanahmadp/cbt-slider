@@ -115,16 +115,51 @@ img.image {
 @media (max-width: 1235px) {
   .pattern-bg {
     top: 2.4rem;
-    width: 86.6667%;
-    left: 6.66665%;
+    width: 32.7rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  p {
+    font-size: 1.92rem;
+  }
+  .pattern-quotes {
+    width: 6rem;
+    top: 36.4rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   img.image {
     top: 5.4rem;
-    left: 16.13335%;
-    width: 67.7333%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 25.4rem;
+  }
+  .text {
+    padding: 0 5%;
+    width: 100%;
+    position: absolute;
+    top: 39rem;
+    left: 0;
+    text-align: center;
+    z-index: 100;
+  }
+  .text p.para {
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+  .nameDesig {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  .nameDesig span {
+    font-weight: 500;
+    color: #babacf;
   }
   .slider {
-    top: 38.5%;
+    top: 30.7rem;
     left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(0.7);
             transform: translate(-50%, -50%) scale(0.7);

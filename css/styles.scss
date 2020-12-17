@@ -119,20 +119,57 @@ img.image {
 @media (max-width: 1235px) {
   .pattern-bg {
     top: 2.4rem;
-    width: 86.6667%;
-    left: (100% - 86.6667%)/2;
+    width: 32.7rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  p {
+    font-size: 3.2rem * 0.6;
+  }
+
+  .pattern-quotes {
+    width: 6rem;
+    top: 36.4rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   img.image {
     top: 5.4rem;
-    left: (100% - 67.7333%)/2;
-    width: 67.7333%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25.4rem;
+  }
+
+  .text {
+    padding: 0 5%;
+    width: 100%;
+    position: absolute;
+    top: 39rem;
+    left: 0;
+    text-align: center;
+    z-index: 100;
+    p.para {
+      margin-bottom: 3rem;
+      width: 100%;
+      // font-weight: 500;
+    }
+  }
+
+  .nameDesig {
+    font-size: 2rem *.7;
+    font-weight: 700;
+    span {
+      font-weight: 500;
+      color: color(grayish-blue);
+    }
   }
 
   .slider {
-    top: 38.5%;
+    top: 30.7rem;
     left: 50%;
-    transform: translate(-50%,-50%) scale(.7);
+    transform: translate(-50%, -50%) scale(0.7);
     padding: 0 2.2rem;
   }
 }
