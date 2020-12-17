@@ -117,6 +117,7 @@ img.image {
 .text p.para {
   margin-bottom: 4rem;
   width: 100%;
+  font-weight: 300;
 }
 
 .nameDesig {
@@ -166,7 +167,6 @@ img.image {
   .text p.para {
     margin-bottom: 3rem;
     width: 100%;
-    font-weight: 300;
   }
   .nameDesig {
     font-size: 1.4rem;
